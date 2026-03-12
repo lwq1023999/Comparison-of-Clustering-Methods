@@ -119,6 +119,7 @@ The project was implemented using the following tools and libraries:
 
 ## Repository Structure
 
+```
 Comparison-of-Clustering-Methods
 │
 ├── data
@@ -132,3 +133,4 @@ Comparison-of-Clustering-Methods
 ├── dissertation.pdf
 │
 └── README.md
+```
