@@ -118,3 +118,17 @@ The project was implemented using the following tools and libraries:
 ---
 
 ## Repository Structure
+
+Comparison-of-Clustering-Methods
+│
+├── data
+│   └── SpotifyFeatures.csv
+│
+├── notebooks
+│   ├── Handwritten Digits.ipynb
+│   ├── Simulated Experiment.ipynb
+│   └── Spotify Songs Clustering.ipynb
+│
+├── dissertation.pdf
+│
+└── README.md
