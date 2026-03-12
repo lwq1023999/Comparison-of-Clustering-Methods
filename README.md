@@ -57,7 +57,7 @@ Gaussian Mixture Models are probabilistic clustering models that assume data is 
 Synthetic datasets were generated to evaluate clustering algorithms in controlled environments where the true cluster structure is known.
 
 ### Spotify Dataset
-The Spotify dataset contains audio feature information such as danceability, energy, tempo, and acousticness. 
+The Spotify dataset contains audio feature information such as danceability, energy, tempo, and acousticness. The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db).
 
 ### MNIST Dataset
 The MNIST dataset consists of grayscale images of handwritten digits. Each image is represented as a high-dimensional feature vector.
