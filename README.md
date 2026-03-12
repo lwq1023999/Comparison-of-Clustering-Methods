@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-This repository contains the implementation and experimental analysis conducted for a **postgraduate dissertation** completed as part of the MSc in Data Science and Analytics. The project investigates the behaviour and performance of several widely used clustering algorithms across datasets with different structural characteristics.
+This repository contains the implementation and experimental analysis conducted for a postgraduate dissertation completed as part of the MSc in Data Science and Analytics. The project investigates the behaviour and performance of several widely used clustering algorithms across datasets with different structural characteristics.
 
 The research focuses on a comparative evaluation of four clustering methods:
 
