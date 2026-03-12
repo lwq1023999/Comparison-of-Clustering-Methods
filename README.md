@@ -1,75 +1,107 @@
 # Clustering Technique: A Comprehensive Overview
 
-## Overview
-This project presents a comparative study of four clustering algorithms:
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Clustering-orange)
+![Status](https://img.shields.io/badge/Project-Completed-green)
 
-- K-Means
-- DBSCAN
-- Agglomerative Clustering
+## Project Overview
+
+This repository contains the implementation and experimental analysis conducted for a **postgraduate dissertation** completed as part of the MSc in Data Science and Analytics. The project investigates the behaviour and performance of several widely used clustering algorithms across datasets with different structural characteristics.
+
+The research focuses on a comparative evaluation of four clustering methods:
+
+- K-Means  
+- DBSCAN  
+- Agglomerative Clustering  
 - Gaussian Mixture Models (GMM)
 
-The algorithms are evaluated on three different datasets:
+These algorithms are applied to multiple datasets, including synthetic data, Spotify audio features, and the MNIST handwritten digit dataset. The objective is to analyse how clustering algorithms perform under varying conditions such as high dimensionality, noise, and overlapping cluster structures.
 
-- Synthetic data
-- Spotify track features
-- MNIST handwritten digits
+The study also examines the role of **dimensionality reduction techniques**, particularly Principal Component Analysis (PCA), in improving clustering performance for high-dimensional data. A variety of **internal and external evaluation metrics** are used to assess the quality and effectiveness of the clustering results.
 
-The aim is to examine how clustering performance changes under different data conditions such as noise, dimensionality, sparsity, and cluster overlap.
+The overall goal of this dissertation is to provide a systematic comparison of clustering techniques and highlight the strengths and limitations of each approach when applied to datasets with different characteristics.
+
+---
 
 ## Objectives
-The main objectives of this project are:
 
-- Compare the performance of major clustering algorithms on datasets of different complexity
-- Investigate how well cluster-number selection methods identify the correct number of clusters
-- Evaluate the effect of noise and irrelevant dimensions on clustering stability
-- Study the role of dimensionality reduction in high-dimensional datasets
-- Assess clustering quality using both internal and external evaluation metrics
+The main objectives of this research are:
 
-## Algorithms Used
-### 1. K-Means
-A partition-based clustering method that groups data by minimizing within-cluster variance.
+- Compare the performance of different clustering algorithms on datasets with varying complexity.
+- Investigate approaches for selecting the optimal number of clusters.
+- Analyse how noise and irrelevant features influence clustering performance.
+- Evaluate the impact of dimensionality reduction on clustering quality.
+- Assess clustering results using both internal and external evaluation metrics.
 
-### 2. DBSCAN
-A density-based clustering method that can detect arbitrarily shaped clusters and identify noise points.
+---
 
-### 3. Agglomerative Clustering
-A hierarchical clustering approach that builds a tree of clusters using linkage criteria.
+## Clustering Algorithms
 
-### 4. Gaussian Mixture Model (GMM)
-A probabilistic model-based clustering approach that supports soft clustering and elliptical clusters.
+### K-Means
+K-Means is a partition-based clustering algorithm that groups data points into clusters by minimising the within-cluster variance.
+
+### DBSCAN
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering method that identifies clusters based on regions of high data density and detects noise points.
+
+### Agglomerative Clustering
+Agglomerative clustering is a hierarchical clustering technique that builds clusters by iteratively merging the closest clusters based on a chosen linkage criterion.
+
+### Gaussian Mixture Models (GMM)
+Gaussian Mixture Models are probabilistic clustering models that assume data is generated from a mixture of Gaussian distributions. GMM allows soft clustering where each data point can belong to multiple clusters with different probabilities.
+
+---
 
 ## Datasets
+
 ### Synthetic Data
-Used for controlled experiments where the true number of clusters is known.
+Synthetic datasets were generated to evaluate clustering algorithms in controlled environments where the true cluster structure is known.
 
 ### Spotify Dataset
-A real-world high-dimensional dataset based on audio track features.
+The Spotify dataset contains audio feature information such as danceability, energy, tempo, and acousticness. This dataset represents a real-world example of high-dimensional data.
 
 ### MNIST Dataset
-A high-dimensional image dataset of handwritten digits used to test clustering under sparse and overlapping structure.
+The MNIST dataset consists of grayscale images of handwritten digits. Each image is represented as a high-dimensional feature vector, making it suitable for evaluating clustering performance on complex data.
+
+---
 
 ## Dimensionality Reduction
-Principal Component Analysis (PCA) was applied as a preprocessing step to reduce dimensionality and improve clustering performance, especially on Spotify and MNIST.
+
+Principal Component Analysis (PCA) was applied as a preprocessing step to reduce dataset dimensionality. PCA helps remove redundant features while retaining the most important variance in the data, which improves clustering performance for high-dimensional datasets.
+
+---
 
 ## Evaluation Metrics
-### Internal Metrics
-- Silhouette Score
-- Davies–Bouldin Index (DBI)
-- Calinski–Harabasz Index (CHI)
 
-### External Metrics
-- Adjusted Rand Index (ARI)
+### Internal Evaluation Metrics
+
+- Silhouette Score  
+- Davies–Bouldin Index  
+- Calinski–Harabasz Index  
+
+### External Evaluation Metrics
+
+- Adjusted Rand Index (ARI)  
 - Normalized Mutual Information (NMI)
 
-## Key Findings
-- K-Means, Agglomerative Clustering, and GMM generally produced more stable and interpretable results
-- DBSCAN was highly sensitive to parameter tuning and struggled in high-dimensional settings
-- PCA significantly improved clustering performance on the Spotify dataset
-- On MNIST, GMM achieved the best alignment with true digit labels at selected component settings
-- No single clustering algorithm performed best across all datasets
+---
 
-## Tech Stack
-- Python 3.11
+## Key Findings
+
+The experimental results highlight several important observations:
+
+- K-Means, Agglomerative Clustering, and GMM generally produced more stable clustering results.
+- DBSCAN performed well on lower-dimensional data but struggled with high-dimensional datasets.
+- PCA significantly improved clustering performance on the Spotify dataset.
+- For the MNIST dataset, GMM achieved stronger alignment with the true labels compared to other algorithms.
+- No single clustering algorithm consistently performed best across all datasets.
+
+---
+
+## Technologies Used
+
+The project was implemented using the following tools and libraries:
+
+- Python
 - NumPy
 - pandas
 - scikit-learn
@@ -77,12 +109,6 @@ Principal Component Analysis (PCA) was applied as a preprocessing step to reduce
 - Seaborn
 - Jupyter Notebook
 
+---
+
 ## Repository Structure
-```text
-.
-├── data/
-├── notebooks/
-├── src/
-├── figures/
-├── README.md
-└── requirements.txt
