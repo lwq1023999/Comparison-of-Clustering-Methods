@@ -1,9 +1,5 @@
 # Comparison of Clustering Methods
 
-![Python](https://img.shields.io/badge/Python-3.11.3-blue)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Clustering-orange)
-![Status](https://img.shields.io/badge/Project-Completed-green)
-
 ## Project Overview
 
 This repository contains the implementation and experimental analysis conducted for a postgraduate dissertation completed as part of the MSc in Data Science and Analytics. The project investigates the behaviour and performance of several widely used clustering algorithms across datasets with different structural characteristics.
@@ -103,6 +99,17 @@ The experimental results highlight several important observations:
 
 ---
 
+## Algorithm Capabilities and Limitations
+
+| Algorithm | Shape Handling | Convergence | Capability |
+|-----------|---------------|-------------|-----------|
+| **K-Means** | Performs well for spherical and convex clusters but struggles with irregular or varying density. | Fast convergence and stable, but sensitive to initialization and outliers. | Scalable to large datasets and works best in low or medium-dimensional data. |
+| **DBSCAN** | Strong with arbitrary shapes and density-based clusters, but fails in sparse data. | Deterministic once parameters are tuned, but sensitive to parameter selection. | Good for low-dimensional spatial data, ineffective in high-dimensional data. |
+| **Agglomerative** | Able to capture non-spherical clusters depending on linkage, but sensitive to noise and chaining effects. | Deterministic with no random initialization required, but computationally heavy. | Suitable for small to medium datasets and provides hierarchy for interpretability. |
+| **GMM** | Able to handle elliptical and overlapping clusters depending on the covariance structure. | Sensitive to initial parameters; EM algorithm may converge to local optima. | Effective in medium or high-dimensional data, but computationally more costly depending on the covariance structure. |
+
+```
+
 ## Technologies Used
 
 The project was implemented using the following tools and libraries:
@@ -130,7 +137,7 @@ Comparison-of-Clustering-Methods
 │   ├── Simulated Experiment.ipynb
 │   └── Spotify Songs Clustering.ipynb
 │
-├── dissertation.pdf
+├── Comparison of Clustering Methods Final.pdf
 │
 └── README.md
 ```
