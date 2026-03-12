@@ -108,6 +108,7 @@ The experimental results highlight several important observations:
 | **Agglomerative** | Able to capture non-spherical clusters depending on linkage, but sensitive to noise and chaining effects. | Deterministic with no random initialization required, but computationally heavy. | Suitable for small to medium datasets and provides hierarchy for interpretability. |
 | **GMM** | Able to handle elliptical and overlapping clusters depending on the covariance structure. | Sensitive to initial parameters; EM algorithm may converge to local optima. | Effective in medium or high-dimensional data, but computationally more costly depending on the covariance structure. |
 
+---
 
 ## Technologies Used
 
