@@ -1,6 +1,6 @@
-# Clustering Technique: A Comprehensive Overview
+# Comparison of Clustering Methods
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Python](https://img.shields.io/badge/Python-3.11.3-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Clustering-orange)
 ![Status](https://img.shields.io/badge/Project-Completed-green)
 
@@ -17,7 +17,7 @@ The research focuses on a comparative evaluation of four clustering methods:
 
 These algorithms are applied to multiple datasets, including synthetic data, Spotify audio features, and the MNIST handwritten digit dataset. The objective is to analyse how clustering algorithms perform under varying conditions such as high dimensionality, noise, and overlapping cluster structures.
 
-The study also examines the role of **dimensionality reduction techniques**, particularly Principal Component Analysis (PCA), in improving clustering performance for high-dimensional data. A variety of **internal and external evaluation metrics** are used to assess the quality and effectiveness of the clustering results.
+The study also examines the role of dimensionality reduction techniques, particularly Principal Component Analysis (PCA), in improving clustering performance for high-dimensional data. A variety of internal and external evaluation metrics are used to assess the quality and effectiveness of the clustering results.
 
 The overall goal of this dissertation is to provide a systematic comparison of clustering techniques and highlight the strengths and limitations of each approach when applied to datasets with different characteristics.
 
@@ -38,7 +38,7 @@ The main objectives of this research are:
 ## Clustering Algorithms
 
 ### K-Means
-K-Means is a partition-based clustering algorithm that groups data points into clusters by minimising the within-cluster variance.
+K-Means is a partition-based clustering algorithm that groups data points into clusters by minimizing the within-cluster variance.
 
 ### DBSCAN
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a density-based clustering method that identifies clusters based on regions of high data density and detects noise points.
@@ -57,11 +57,10 @@ Gaussian Mixture Models are probabilistic clustering models that assume data is 
 Synthetic datasets were generated to evaluate clustering algorithms in controlled environments where the true cluster structure is known.
 
 ### Spotify Dataset
-The Spotify dataset contains audio feature information such as danceability, energy, tempo, and acousticness. This dataset represents a real-world example of high-dimensional data.
+The Spotify dataset contains audio feature information such as danceability, energy, tempo, and acousticness. 
 
 ### MNIST Dataset
-The MNIST dataset consists of grayscale images of handwritten digits. Each image is represented as a high-dimensional feature vector, making it suitable for evaluating clustering performance on complex data.
-
+The MNIST dataset consists of grayscale images of handwritten digits. Each image is represented as a high-dimensional feature vector.
 ---
 
 ## Dimensionality Reduction
@@ -74,11 +73,17 @@ Principal Component Analysis (PCA) was applied as a preprocessing step to reduce
 
 ### Internal Evaluation Metrics
 
+Internal validation metrics evaluate the quality of clustering based solely on considering the
+dataset and the clustering output, without the need for external labels.
+
 - Silhouette Score  
 - Davies–Bouldin Index  
 - Calinski–Harabasz Index  
 
 ### External Evaluation Metrics
+
+External validation metrics gauge clustering quality by comparing predicted cluster labels against
+the known ground-truth labels.
 
 - Adjusted Rand Index (ARI)  
 - Normalized Mutual Information (NMI)
